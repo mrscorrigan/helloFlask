@@ -5,19 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Hello World</title>
     <style>
-
-        .table {
-            border: 2px solid black;
-            padding: 5px;
+      h1 {
+            text-align: center;
         }
-        table {
-            border-collapse: collapse !important;
-}
-
-        table, td, th {
-            border: 1px solid black !important;
-}
-
     </style>
 </head>
 <body>
@@ -34,28 +24,7 @@
 {#</ol>#}
 
 
-<div class="container">
 
-     <h2>Country Information</h2>
-        <table class="table table-striped table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th>Country</th>
-                    <th>Capital</th>
-                    <th>Population</th>
-                </tr>
-            </thead>
-            <tbody>
-            {%  for Country in data%}
-                <tr>
-                    <td a href="ireland.jpg">{{ Country.Country }}</td>
-                    <td>{{ Country.Capital }}</td>
-                    <td>{{ Country.Population }}</td>
-                </tr>
-            {%  endfor %}
-             </tbody>
-        </table>
-</div>
 
 </body>
 </html>

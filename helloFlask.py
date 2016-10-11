@@ -21,7 +21,7 @@ def get_index():
 
 @app.route('/country')
 def get_country():
-    return render_template("index.html", data=countries)
+    return render_template("countries.html", data=countries)
 
 
 if __name__ == '__main__':
